@@ -17,7 +17,7 @@ public class Figuren extends PApplet
     @Override
     public void settings()
     {
-        size(500, 350); // Festlegen der Fenstergröße
+        size(500, 400); // Festlegen der Fenstergröße
     }        
 
     public void zeichneBildC() {
@@ -30,16 +30,21 @@ public class Figuren extends PApplet
         ellipse(300, 100, 75, 75);
         ellipse(300, 100, 60, 60);
         ellipse(300, 100, 45, 45);
-        ellipse(312, 212, 90, 90);
-        rect(280, 180, 50, 50);
+
+        ellipse(300, 200, 90, 90);
+        rect(275, 175, 50, 50);
+        rect(285, 185, 30, 30);
+        rect(295, 195, 10, 10); 
         // ***** Ende der eigenen Anweisungen **********
     }
 
     //***** Zusatzaufgabe bzw. Hausaufgabe *************
     public void zeichneBildA() {
         // ***** hier kommen deine Anweisungen hin ************
-
-        // ***** Ende der eigenen Anweisungen **********  
+        ellipse(100, 100, 100, 100); 
+        rect(50, 150, 100, 100);
+        triangle(100, 250, 50, 350, 150, 350); 
+            // ***** Ende der eigenen Anweisungen **********  
     }
 
     /**
@@ -50,8 +55,9 @@ public class Figuren extends PApplet
     @Override
     public void setup()
     {
-        zeichneBildC(); // Aufruf deiner Methode
-        // zeichneBildA();
+        zeichneBildC(); 
+        zeichneBildA();// Aufruf deiner Methode
+        // zeichneBildA()
     }
 
     /**
