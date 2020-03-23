@@ -1,4 +1,4 @@
- //$PKGLINE
+//$PKGLINE
 import processing.core.PApplet;
 
 /**
@@ -17,7 +17,7 @@ public class ProcessingTmpl extends PApplet
     @Override
     public void settings()
     {
-        size(500,500);
+        size(1000,1000);
     }        
 
     /**
@@ -31,22 +31,37 @@ public class ProcessingTmpl extends PApplet
 
     }
 
-    /**
-     * Die draw() Methode wird nach der setup() Methode aufgerufen
-     * und führt den Code innerhalb ihres Blocks fortlaufend aus,
-     * bis das Programm gestoppt oder noLoop() aufgerufen wird.
-     */
-    @Override
-    public void draw()
-    {
+    public void zeichneQuadrate()
+      { 
+            for(int i=0; i<10; i++) {
+                rect(50+i*50, 50, 50, 50);
 
-    }
+            }
 
-    /**
-     * Mit der main()-Methode wird das Programm gestartet.
-     *
-     */	
-    public static void main(String _args[]){ 
+        }
+
+        public void zeichneKreise()
+        {for (int i=0; i<20; i++) {
+            ellipse(300, 500, 400-20*i, 400-20*i);
+        }}
+        
+        /**
+         * Die draw() Methode wird nach der setup() Methode aufgerufen
+         * und führt den Code innerhalb ihres Blocks fortlaufend aus,
+         * bis das Programm gestoppt oder noLoop() aufgerufen wird.
+         */
+        @Override
+        public void draw()
+        {zeichneQuadrate();
+         zeichneKreise(); 
+
+        }
+
+        /**
+         * Mit der main()-Methode wird das Programm gestartet.
+         *
+         */	
+        public static void main(String _args[]){ 
         PApplet.main(new String[] {ProcessingTmpl.class.getName() });
     }
 
