@@ -22,7 +22,14 @@ public class FigurC_mitSchleife extends PApplet
 
     public void zeichneBildC() {
         // ***** hier kommen deine Anweisungen hin ************
-   
+        rect(50, 50, 100, 100); 
+        for(int i=0; i<3; i++) {
+            ellipse(100, 100, 80-i*20, 80-i*20);}
+
+        ellipse(100, 210, 100, 100);
+        for(int i=0; i<3; i++) {
+            rect(75+i*7, 185+i*7, 50-i*15, 50-i*15);
+        }
         // ***** Ende der eigenen Anweisungen **********
     }
 
@@ -36,7 +43,6 @@ public class FigurC_mitSchleife extends PApplet
     {
         zeichneBildC(); // Aufruf deiner Methode
     }
-
 
     /**
      * Mit der main()-Methode wird das Programm gestartet.

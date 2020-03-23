@@ -26,7 +26,12 @@ public class Figuren extends PApplet
         // dass Bild C gezeichnet wird
 
         // ***** hier kommen deine Anweisungen hin ************
-
+        rect(255, 55 , 90, 90);
+        ellipse(300, 100, 75, 75);
+        ellipse(300, 100, 60, 60);
+        ellipse(300, 100, 45, 45);
+        ellipse(312, 212, 90, 90);
+        rect(280, 180, 50, 50);
         // ***** Ende der eigenen Anweisungen **********
     }
 
