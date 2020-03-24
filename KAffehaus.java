@@ -43,13 +43,14 @@ public class KAffehaus extends PApplet
         fill (0);
         zeichneQuadrate (); 
         stroke (187);
+        strokeWeight(2);
         parallelen ();
 
     }
 
     public void parallelen ()
 
-    {
+    { 
         for (int i=0;i<10;i++){
 
             line(10,u*i,630,u*i);
